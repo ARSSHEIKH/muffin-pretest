@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import Dropdown from './components/Dropdown';
-
+import saveIcon from './assets/saveicon.svg';
+import errorIcon from './assets/erroricon.svg';
 function App() {
   return (
     <div class="main">
@@ -25,60 +26,20 @@ function App() {
         <h2 class="head2">신청 목록 <p>(총 100명 | 승인대기 <span>1</span> 건)</p>
         </h2>
         <div class="d-flex gap-1">
-          <div class="select-menu" id="dropdown1">
-            <div class="select-btn">
-              <span class="sBtn-text">승인여부 전체</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
-                <path d="M5.87511 7.4001C5.74178 7.4001 5.61278 7.3751 5.48811 7.3251C5.36278 7.2751 5.25844 7.20843 5.17511 7.1251L0.575109 2.5251C0.391776 2.34176 0.30011 2.10843 0.30011 1.8251C0.30011 1.54176 0.391776 1.30843 0.575109 1.1251C0.758443 0.941764 0.991776 0.850098 1.27511 0.850098C1.55844 0.850098 1.79178 0.941764 1.97511 1.1251L5.87511 5.0251L9.77511 1.1251C9.95844 0.941764 10.1918 0.850098 10.4751 0.850098C10.7584 0.850098 10.9918 0.941764 11.1751 1.1251C11.3584 1.30843 11.4501 1.54176 11.4501 1.8251C11.4501 2.10843 11.3584 2.34176 11.1751 2.5251L6.57511 7.1251C6.47511 7.2251 6.36678 7.29576 6.25011 7.3371C6.13344 7.3791 6.00844 7.4001 5.87511 7.4001Z" fill="#5A616A" />
-              </svg>
-            </div>
-
-            <ul class="options">
-              <li class="option">
-                <span class="option-text">승인여부 전체</span>
-              </li>
-              <li class="option">
-                <span class="option-text">승인대기</span>
-              </li>
-              <li class="option">
-                <span class="option-text">승인완료</span>
-              </li>
-              <li class="option">
-                <span class="option-text">승인거부</span>
-              </li>
-            </ul>
-          </div>
-          <div class="select-menu" id="dropdown2">
-            <div class="select-btn">
-              <span class="sBtn-text">신청일시순</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
-                <path d="M5.87511 7.4001C5.74178 7.4001 5.61278 7.3751 5.48811 7.3251C5.36278 7.2751 5.25844 7.20843 5.17511 7.1251L0.575109 2.5251C0.391776 2.34176 0.30011 2.10843 0.30011 1.8251C0.30011 1.54176 0.391776 1.30843 0.575109 1.1251C0.758443 0.941764 0.991776 0.850098 1.27511 0.850098C1.55844 0.850098 1.79178 0.941764 1.97511 1.1251L5.87511 5.0251L9.77511 1.1251C9.95844 0.941764 10.1918 0.850098 10.4751 0.850098C10.7584 0.850098 10.9918 0.941764 11.1751 1.1251C11.3584 1.30843 11.4501 1.54176 11.4501 1.8251C11.4501 2.10843 11.3584 2.34176 11.1751 2.5251L6.57511 7.1251C6.47511 7.2251 6.36678 7.29576 6.25011 7.3371C6.13344 7.3791 6.00844 7.4001 5.87511 7.4001Z" fill="#5A616A" />
-              </svg>
-            </div>
-
-            <ul class="options">
-              <li class="option">
-                <span class="option-text">신청일시순</span>
-              </li>
-              <li class="option">
-                <span class="option-text">승인일시순</span>
-              </li>
-            </ul>
-          </div>
-          <div class="select-menu" id="dropdown3">
-            <div class="select-btn">
-              <span class="sBtn-text">50개씩 보기</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
-                <path d="M5.87511 7.4001C5.74178 7.4001 5.61278 7.3751 5.48811 7.3251C5.36278 7.2751 5.25844 7.20843 5.17511 7.1251L0.575109 2.5251C0.391776 2.34176 0.30011 2.10843 0.30011 1.8251C0.30011 1.54176 0.391776 1.30843 0.575109 1.1251C0.758443 0.941764 0.991776 0.850098 1.27511 0.850098C1.55844 0.850098 1.79178 0.941764 1.97511 1.1251L5.87511 5.0251L9.77511 1.1251C9.95844 0.941764 10.1918 0.850098 10.4751 0.850098C10.7584 0.850098 10.9918 0.941764 11.1751 1.1251C11.3584 1.30843 11.4501 1.54176 11.4501 1.8251C11.4501 2.10843 11.3584 2.34176 11.1751 2.5251L6.57511 7.1251C6.47511 7.2251 6.36678 7.29576 6.25011 7.3371C6.13344 7.3791 6.00844 7.4001 5.87511 7.4001Z" fill="#5A616A" />
-              </svg>
-            </div>
-
-            <ul class="options">
-              <li class="option">
-                <span class="option-text">50개씩 보기</span>
-              </li>
-            </ul>
-          </div>
+          <select class="form-select select-menu" aria-label="Default select example">
+            <option selected>승인여부 전체</option>
+            <option value="1">승인대기</option>
+            <option value="2">승인완료</option>
+            <option value="3">승인거부</option>
+          </select>
+          <select class="form-select select-menu" aria-label="Default select example">
+            <option selected>신청일시순</option>
+            <option value="1">승인일시순</option>
+          </select>
+          <select class="form-select select-menu" aria-label="Default select example">
+            <option selected>50개씩 보기</option>
+            <option value="1">30개씩 보기</option>
+          </select>
         </div>
       </div>
       <span class="hr-line"></span>
@@ -88,7 +49,11 @@ function App() {
         </a>
         <div class="d-flex gap-1 align-items-center">
           <h2 class="head3">선택한 0건</h2>
-          <Dropdown />
+          <select class="form-select select-menu" aria-label="Default select example">
+            <option selected>승인상태 변경</option>
+            <option value="1">승인완료</option>
+            <option value="2">승인거부</option>
+          </select>
           <a href="#!" class="button-main" data-bs-toggle="modal" data-bs-target="#modal2">
             저장
           </a>
@@ -318,35 +283,14 @@ function App() {
                         </svg></span>
                       </div>
                       <div class=" detaildrop">
-                        <div class="select-menu" id="dropdown5">
-                          <div class="select-btn">
-                            <span class="sBtn-text">일반개인</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
-                              <path d="M5.87511 7.4001C5.74178 7.4001 5.61278 7.3751 5.48811 7.3251C5.36278 7.2751 5.25844 7.20843 5.17511 7.1251L0.575109 2.5251C0.391776 2.34176 0.30011 2.10843 0.30011 1.8251C0.30011 1.54176 0.391776 1.30843 0.575109 1.1251C0.758443 0.941764 0.991776 0.850098 1.27511 0.850098C1.55844 0.850098 1.79178 0.941764 1.97511 1.1251L5.87511 5.0251L9.77511 1.1251C9.95844 0.941764 10.1918 0.850098 10.4751 0.850098C10.7584 0.850098 10.9918 0.941764 11.1751 1.1251C11.3584 1.30843 11.4501 1.54176 11.4501 1.8251C11.4501 2.10843 11.3584 2.34176 11.1751 2.5251L6.57511 7.1251C6.47511 7.2251 6.36678 7.29576 6.25011 7.3371C6.13344 7.3791 6.00844 7.4001 5.87511 7.4001Z" fill="#5A616A" />
-                            </svg>
-                          </div>
-
-                          <ul class="options">
-                            <li class="option">
-                              <span class="option-text">일반개인</span>
-                            </li>
-                            <li class="option">
-                              <span class="option-text">소득적격</span>
-                            </li>
-                            <li class="option">
-                              <span class="option-text">개인전문</span>
-                            </li>
-                            <li class="option">
-                              <span class="option-text">법인</span>
-                            </li>
-                            <li class="option">
-                              <span class="option-text">여신금융</span>
-                            </li>
-                            <li class="option">
-                              <span class="option-text">P2P온투</span>
-                            </li>
-                          </ul>
-                        </div>
+                        <select class="form-select select-menu" aria-label="Default select example">
+                          <option selected>일반개인</option>
+                          <option value="1">소득적격</option>
+                          <option value="2">개인전문</option>
+                          <option value="3">법인</option>
+                          <option value="4">여신금융</option>
+                          <option value="5">P2P온투</option>
+                        </select>
                       </div>
 
                     </div>
@@ -462,7 +406,7 @@ function App() {
                   </div>
                   <div class="form-input ext-bord">
                     <div class="w-100 d-flex ">
-                      <div class="Label-u">
+                      <div class="Label-u w-150px">
                         <span>최근저장일시</span>
                       </div>
                       <div class="datetime">
@@ -470,7 +414,7 @@ function App() {
                       </div>
                     </div>
                     <div class="w-100 d-flex ">
-                      <div class="Label-u">
+                      <div class="Label-u w-150px">
                         <span>관리자</span>
                       </div>
                       <div class="datetime">
@@ -495,12 +439,12 @@ function App() {
             <div class="p-4">
               <div class="d-flex justify-content-between align-items-center ">
                 <div>
-                  <img src="save-icon.svg" alt="" />
-                  {/* <img src="error.svg" alt=""> */}
+                  <img src={saveIcon} alt="" />
+                  <img src={errorIcon} alt="" />
                 </div>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <h2 class="head2">저장되었습니다.</h2>
+              <h2 class="head2 h2u">저장되었습니다.</h2>
               <div class="w-100 d-flex justify-content-center align-items-center ">
                 <button type="submit" class="save-btn" data-bs-dismiss="modal" aria-label="Close">확인</button>
               </div>

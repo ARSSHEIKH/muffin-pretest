@@ -195,9 +195,12 @@ body{
 .select-menu {
     border-radius: 8px;
     border: 1px solid var(--Input-form_completed, #B1B4BB) !important;
-    background: #FFF;
     width: 150px;
     height: fit-content;
+    box-shadow: none !important;
+  }
+  .select-menu:focus{
+    box-shadow: none !important;
   }
   .sBtn-text{
     color: #000;
@@ -309,10 +312,10 @@ body{
     margin-right: 10px;
 }
 .button-main{
-    width: 100px;
+    width: fit-content;
     border-radius: 10px;
     background: var(--Primary-main, #2A3958);
-    padding: 14px;
+    padding: 12px 30px;
     color: #FFF;
     text-align: center;
     font-size: 16px;
@@ -506,7 +509,7 @@ body{
 .Label-u {
   display: flex;
   align-items: center;
-  width: 160px;
+  width: 285px;
   padding: 15px;
   background: var(--Table-bg, #EEF0F4);
   border-bottom: 1px solid #fff;
@@ -515,6 +518,9 @@ body{
   display: flex;
   align-items: flex-start;
   gap: 3px;
+}
+.w-150px{
+  width: 150px;
 }
 .detaildrop{
     border-bottom: 1px solid #D7D8DA;
@@ -636,6 +642,7 @@ body{
     border: 1px solid var(--Input-form_completed, #555555);
   }
   .checkcont span{
+    width: 100%;
     color: var(--Dark-1, #0B101A);
     font-size: 14px;
     font-weight: 400;
@@ -661,7 +668,7 @@ body{
   max-width: 400px;
   width: 100%;
 }
-.head2{
+.h2u{
   color: var(--Dark-1, #0B101A);
   font-size: 18px;
   font-weight: 600;
