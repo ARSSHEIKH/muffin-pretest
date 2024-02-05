@@ -247,6 +247,7 @@ body{
   }
   .select-menu .options .option:hover {
     background: var(--Primary-main, #2A3958);
+    color: #fff !important;
   }
   .select-menu .options .option:hover .option-text{
     color: #fff !important;
