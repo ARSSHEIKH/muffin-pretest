@@ -675,6 +675,10 @@ body{
   margin-top: 16px;
   margin-bottom: 32px;
 }
+.exlable{
+  width: fit-content;
+  text-wrap: nowrap;
+}
 @media (max-width:700px) {
   .ext-bord{
     flex-direction: column;

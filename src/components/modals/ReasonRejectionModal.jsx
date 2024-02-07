@@ -82,7 +82,7 @@ export default function ReasonRejectionModal() {
                   </div>
                   <div className="form-input ext-bord">
                     <div className="w-100 d-flex ">
-                      <div className="Label-u">
+                      <div className="Label-u exlable">
                         <span>최근저장일시</span>
                       </div>
                       <div className="datetime">
@@ -90,7 +90,7 @@ export default function ReasonRejectionModal() {
                       </div>
                     </div>
                     <div className="w-100 d-flex ">
-                      <div className="Label-u">
+                      <div className="Label-u exlable">
                         <span>관리자</span>
                       </div>
                       <div className="datetime">
