@@ -5,7 +5,7 @@ export default function Pagination() {
     <nav>
         <ul className="slds-pagination">
           <li>
-            <a href="#" aria-label="Previous">
+            <ahref="/#" aria-label="Previous">
               <span aria-hidden="true">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
                   fill="none">
@@ -20,7 +20,7 @@ export default function Pagination() {
             </a>
           </li>
           <li>
-            <a href="#">
+            <ahref="/#">
               <span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
                   fill="none">
@@ -31,15 +31,15 @@ export default function Pagination() {
               </span>
             </a>
           </li>
-          <li className="pages-u"><a href="#">1</a></li>
-          <li className="pages-u"><a href="#">2</a></li>
-          <li className="pages-u"><a href="#">3</a></li>
-          <li className="pages-u"><a href="#">4</a></li>
-          <li className="pages-u"><a href="#">5</a></li>
-          <li className="pages-u"><a href="#">6</a></li>
-          <li className="pages-u"><a href="#">7</a></li>
+          <li className="pages-u"><ahref="/#">1</a></li>
+          <li className="pages-u"><ahref="/#">2</a></li>
+          <li className="pages-u"><ahref="/#">3</a></li>
+          <li className="pages-u"><ahref="/#">4</a></li>
+          <li className="pages-u"><ahref="/#">5</a></li>
+          <li className="pages-u"><ahref="/#">6</a></li>
+          <li className="pages-u"><ahref="/#">7</a></li>
           <li>
-            <a href="#">
+            <ahref="/#">
               <span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
                   fill="none">
@@ -51,7 +51,7 @@ export default function Pagination() {
             </a>
           </li>
           <li>
-            <a href="#" a>
+            <ahref="/#" a>
               <span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
                   fill="none">
