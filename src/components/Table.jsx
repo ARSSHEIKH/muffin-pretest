@@ -60,7 +60,7 @@ const CustomTable = ({ tableData }) => {
             <label for="chb-1"></label>
           </div>
         </td>
-        <td className="slds-truncate" scope="row">1</td>
+        <td className="slds-truncate">1</td>
         <td className="slds-truncate">소득적격</td>
         <td className="">개인전문</td>
         <td className="slds-truncate ">
@@ -81,7 +81,7 @@ const CustomTable = ({ tableData }) => {
             <label for="chb-2"></label>
           </div>
         </td>
-        <td className="slds-truncate" scope="row">2</td>
+        <td className="slds-truncate">2</td>
         <td className="slds-truncate">소득적격</td>
         <td className="">개인전문</td>
         <td className="slds-truncate ">
@@ -102,7 +102,7 @@ const CustomTable = ({ tableData }) => {
             <label for="chb-3"></label>
           </div>
         </td>
-        <td className="slds-truncate" scope="row">2</td>
+        <td className="slds-truncate">2</td>
         <td className="slds-truncate">소득적격</td>
         <td className="">개인전문</td>
         <td className="slds-truncate ">
